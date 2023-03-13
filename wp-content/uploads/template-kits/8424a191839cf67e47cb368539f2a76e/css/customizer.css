@@ -1,0 +1,129 @@
+/**
+ * Dividers
+ */
+.title-divider {
+	position: absolute;
+	right: 100%;
+	width: 100px;
+	top: 0;
+	margin-right: 15px;
+	margin-top: .7rem;
+}
+
+/**
+ * Portfolio grids
+ */
+.portfolio-grid .widget-image-caption {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: black !important;
+    font-weight: bold;
+    font-size: 1.6em;
+    opacity: 0;
+    transform: translate3d(-100px,0,0);
+    transition: all .3s ease-in-out;
+    background: white;
+    padding: 6px 14px;
+}
+.portfolio-grid img {
+	transition: transform .3s ease-in-out;
+	transform: scale(1);
+}
+.portfolio-grid .elementor-image {
+	overflow: hidden;
+}
+.portfolio-grid .elementor-widget-image {
+    margin-bottom: 0;
+}
+.portfolio-grid .elementor-widget-image:hover img {
+	transform: scale(1.2);
+}
+.portfolio-grid .elementor-widget-image:hover .widget-image-caption {
+	transform: translate3d(0px,0,0);
+	opacity: 1;
+}
+
+/**
+ * Posts list
+ */
+.posts-list ul {
+	list-style: none;
+	padding-left: 0;
+	font-size: 1.4rem;
+	font-family: Helvetica, Arial, sans-serif;
+	margin-top: 0;
+}
+.posts-list li {
+	border-bottom: 1px solid #dedede;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+.posts-list h5 {
+	display: none;
+}
+.posts-list a {
+	color: black;
+	padding: 17px 0;
+  display: inline-block;
+	transition: all .3s ease-in-out;
+}
+.posts-list .post-date {
+	margin-left: auto;
+	font-size: .9rem;
+	opacity: .3;
+}
+
+/**
+ * Team members
+ */
+.team-members a.elementor-icon.elementor-social-icon {
+    background: transparent;
+/* 	  opacity: 0; */
+}
+.team-members .elementor-widget-image:hover + .elementor-widget-social-icons .elementor-social-icon {
+	  opacity: 1;
+}
+
+.team-members a.elementor-icon.elementor-social-icon i {
+    color: black;
+}
+.team-members figcaption.widget-image-caption.wp-caption-text {
+    color: black;
+    position: absolute;
+    bottom: 0;
+    background: white;
+    padding: 13px;
+		width: 230px;
+}
+
+/**
+ * Social Bar
+ */
+.social-bar a.elementor-icon.elementor-social-icon {
+    margin: 0 !important;
+    border-radius: 0;
+    padding: .8rem 1rem !important;
+}
+.social-bar a.elementor-icon.elementor-social-icon:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.social-bar a.elementor-icon.elementor-social-icon:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/**
+ * Icon boxes
+ */
+.ewp-icon-box.elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title {
+    margin-top: 0;
+}
+.ewp-icon-box.elementor-widget-icon-box .elementor-icon {
+    transform: translate3d(0px, 0, 0);
+}
+.ewp-icon-box.elementor-widget-icon-box:hover .elementor-icon {
+    transform: translate3d(-20px, 0, 0);
+}
